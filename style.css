@@ -103,6 +103,6 @@ legend {
   display: flex;
   justify-content: space-around;
 }
-.cat-gallery-item-img {
+.cat-gallery-menu .cat-gallery-item .cat-gallery-item-img {
   max-width: 90%;
 }

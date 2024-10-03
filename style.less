@@ -112,9 +112,10 @@ legend {
 
 // #endregion reset css
 @coloralltext: purple;
+@max-width-img:90%;
 
 .title-img {
-    max-width: 90%;
+    max-width: @max-width-img;
     display: block;
     margin: 0 auto;
 }
@@ -123,7 +124,7 @@ legend {
     text-align: center;
     display: block;
     margin: 30px auto;
-    color: @coloralltext
+    color: @coloralltext;
 }
 
 .cat-gallery {}
@@ -131,11 +132,14 @@ legend {
 .cat-gallery-menu {
     display: flex;
     justify-content: space-around;
+    .cat-gallery-item {
+        .cat-gallery-item-img {
+            max-width: @max-width-img;
+        }
+    }
 }
 
-.cat-gallery-item {}
 
-.cat-gallery-item-img {
-    max-width: 90%;
-}
+
+
 
